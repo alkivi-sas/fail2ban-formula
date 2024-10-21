@@ -13,7 +13,7 @@
 {{ name }} = {{ value|first }}
         {%- if value|length > 1 %}
             {%- for item in value[1:] %}
-{{ item|indent(width=name_length + 3, indentfirst=True) }}
+{{ item|indent(width=name_length + 3, first=True) }}
             {%- endfor %}
         {%- endif %}
     {%- endif %}
